@@ -1,0 +1,27 @@
+
+<dx-data-grid 
+
+  id="gridContainer"
+  [dataSource]="data"
+  keyExpr="idClient"
+  [allowColumnReordering]="true"
+  [allowColumnResizing]="true"
+  [columnAutoWidth]="true"
+  [showBorders]="true"
+>
+  
+
+  <dxi-column alignment="left" dataField="idClient" ></dxi-column>
+  <dxi-column alignment="center" dataField="carMatricule" dataType="string"></dxi-column>
+  <dxi-column alignment="center" dataField="carMarque" dataType="string"></dxi-column>
+  <dxi-column alignment="center" dataField="dateDebut" dataType="date"></dxi-column>
+  <dxi-column alignment="center" dataField="dateFin" dataType="date"></dxi-column>
+  <dxi-column alignment="center" dataField="priceTotal" ></dxi-column>
+  <!-- <dxi-column
+    caption="Employee"
+    [width]="230"
+    [fixed]="true"
+    [calculateCellValue]="calculateCellValue"
+  ></dxi-column> -->
+  
+</dx-data-grid>

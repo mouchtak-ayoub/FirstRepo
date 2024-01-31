@@ -1,0 +1,37 @@
+<div class="dx-swatch-dark">
+
+<mat-toolbar class="top-bar">
+    <span>My App</span>
+    <mat-form-field class="search-button">
+        <input matInput placeholder="Search" >
+        <mat-icon class="search-icon">search</mat-icon>
+      </mat-form-field>
+    <span class="example-spacer">
+        <button mat-raised-button [routerLink]="['/signup']" color="primary" >Sign Up</button>
+        <button mat-raised-button [routerLink]="['/login']" color="primary" >Log in</button>
+    </span>
+  </mat-toolbar>
+<mat-toolbar>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <button mat-icon-button (click)="drawer.toggle()" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon> 
+      </button>  
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer 
+    #drawer
+    class="example-sidenav" 
+    mode="side">
+    </mat-drawer>
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->
+</div>

@@ -1,0 +1,20 @@
+::ng-deep .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.iconVisib{
+    cursor: pointer;
+    color: black;
+    padding-right: 10px;
+}
+
+.centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

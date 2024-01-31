@@ -1,0 +1,35 @@
+.example-spacer{
+    position: absolute;
+    left: 80%;
+}
+.top-bar{
+    background-color: rgb(65, 51, 51);
+}
+.search-button{
+    position: absolute;
+    left: 30%;
+    top: 2%;
+    height: 11%;
+    width: 35%;
+}
+.search-icon{
+   position: absolute;
+   left: 94%;
+}
+::ng-deep .mat-drawer-container.example-container
+{
+    height: 88vh;
+}
+// ::ng-deep .mat-drawer-container {
+//     position: relative;
+//     z-index: 1;
+//     color: var(--mat-sidenav-content-text-color);
+//     background-color: var(--mat-sidenav-content-background-color);
+//     box-sizing: border-box;
+//     /* -webkit-overflow-scrolling: touch; */
+//     overflow: hidden;
+//     display: inherit !important;
+// }
+::ng-deep .example-sidenav{
+    min-width: 20% ;
+}
